@@ -16,6 +16,18 @@ public class Diagonalsum {
         //     }
         // }
 
+              // optimize Solution
+// with time complexity O(n)
+        for (int i = 0; i < matrix.length; i++) {
+            // PD
+            sum = sum + matrix[i][i]; //i == j
+            // SD
+            if(i != matrix.length-1-i){
+                sum += matrix[i][matrix.length-1-i];
+            }
+        }
+
+
 
   
 
